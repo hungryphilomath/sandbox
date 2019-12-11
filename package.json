@@ -7,7 +7,7 @@
     "lint-js": "eslint \"src/js/**/*.js\"",
     "lint-sass": "stylelint \"src/sass/**/*.scss\"",
     "lint": "npm run lint-sass && npm run lint-js",
-    "start": "cd src && python3 -m http.server 3000",
+    "start": "parcel \"./src/index.html\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ahmed Abuelgasim",
