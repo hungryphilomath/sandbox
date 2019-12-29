@@ -22,9 +22,12 @@ module.exports = {
     '@typescript-eslint'
   ],
   'rules': {
-    'semi': [
+    'arrow-spacing': [
       'error',
-      'always'
+      {
+        'before': true,
+        'after': true
+      }
     ],
     'no-multiple-empty-lines': [
       'warn',
@@ -32,11 +35,19 @@ module.exports = {
         'max':  3
       }
     ],
+    'object-curly-spacing': [
+      'error',
+      'always',
+    ],
     'prefer-const': [
       'error',
       {
         'destructuring': 'all'
       }
+    ],
+    'semi': [
+      'error',
+      'always'
     ],
     '@typescript-eslint/explicit-function-return-type': 'off',
   },
