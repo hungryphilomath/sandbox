@@ -1,6 +1,6 @@
 async function fetchFn(url, options = {}, log = false) {
   let data = null;
-  let response = await fetch(url, options);
+  const response = await fetch(url, options);
 
   if (response.status !== 200) {
     console.log(`Error. Response status: ${response.status}`);

@@ -1,4 +1,4 @@
-import {projectName} from './constants.js';
+import { projectName } from './constants.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log(`${projectName}: DOMContentLoaded event`);

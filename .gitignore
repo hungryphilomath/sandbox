@@ -43,3 +43,4 @@ dist/
 *.css
 webhost.json
 newticket.py
+.cache/
