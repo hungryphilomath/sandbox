@@ -1,6 +1,6 @@
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
-const {exec} = require('child_process');
+const { exec } = require('child_process');
 const gulp = require('gulp');
 const minify = require('gulp-clean-css');
 const sass = require('gulp-sass');
@@ -30,7 +30,7 @@ gulp.task('serve', () => {
 gulp.task('sass', () => {
   return gulp.src(`./${dirs.src}/sass/**/*.scss`)
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(`./${dirs.src}/css`))
     .pipe(browserSync.stream());
