@@ -6,33 +6,37 @@ module.exports = {
   },
   'extends': [
     'eslint:recommended',
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
   ],
   'globals': {
     'Atomics': 'readonly',
-    'SharedArrayBuffer': 'readonly'
+    'SharedArrayBuffer': 'readonly',
   },
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
+    'ecmaFeatures': {
+      'jsx': true,
+    },
     'ecmaVersion': 2018,
-    'sourceType': 'module'
+    'sourceType': 'module',
   },
   'plugins': [
-    '@typescript-eslint'
+    'react',
+    '@typescript-eslint',
   ],
   'rules': {
     'arrow-spacing': [
       'error',
       {
         'before': true,
-        'after': true
+        'after': true,
       }
     ],
     'no-multiple-empty-lines': [
       'warn',
       {
-        'max':  3
+        'max':  3,
       }
     ],
     'object-curly-spacing': [
@@ -42,20 +46,23 @@ module.exports = {
     'prefer-const': [
       'error',
       {
-        'destructuring': 'all'
+        'destructuring': 'all',
       }
     ],
     'semi': [
       'error',
-      'always'
+      'always',
     ],
     '@typescript-eslint/explicit-function-return-type': 'off',
   },
   'overrides': [
     {
-      'files': ['*.ts', '*.tsx'],
+      'files': [
+        '*.ts',
+        '*.tsx',
+      ],
       'rules': {
-        '@typescript-eslint/explicit-function-return-type': ['error']
+        '@typescript-eslint/explicit-function-return-type': ['error'],
       }
     }
   ]
