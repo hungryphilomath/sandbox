@@ -41,6 +41,6 @@ node_modules/
 build/
 dist/
 *.css
-webhost.json
 newticket.py
 .cache/
+.env
