@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { StoreProvider } from './store/store';
-import { ChildComponent } from './components/ChildComponent';
+import { ChildComponent } from './components/childComponent/ChildComponent';
 
 const App = () => {
   return (
