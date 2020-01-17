@@ -49,6 +49,7 @@ module.exports = {
         'destructuring': 'all',
       }
     ],
+    'react/prop-types': 0,
     'semi': [
       'error',
       'always',
