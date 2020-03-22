@@ -8,13 +8,25 @@
     "lint-sass": "stylelint \"src/sass/**/*.scss\"",
     "lint": "npm run lint-sass && npm run lint-js",
     "start": "parcel \"./src/index.html\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll"
   },
   "author": "Ahmed Abuelgasim",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/hungryphilomath/sandbox.git"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   },
   "browserslist": [
     "last 2 versions",
@@ -24,9 +36,12 @@
     "**/*.min.js"
   ],
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
     "eslint": "^6.8.0",
+    "jest": "^25.1.0",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.3",
     "stylelint": "^13.2.1",
