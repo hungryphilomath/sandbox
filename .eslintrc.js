@@ -2,6 +2,7 @@ module.exports = {
   'env': {
     'browser': true,
     'es6': true,
+    'jest': true
     'node': true
   },
   'extends': [
@@ -19,7 +20,7 @@ module.exports = {
     'sourceType': 'module'
   },
   'plugins': [
-    '@typescript-eslint'
+    '@typescript-eslint',
   ],
   'rules': {
     'arrow-spacing': [
