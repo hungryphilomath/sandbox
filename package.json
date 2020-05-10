@@ -36,44 +36,19 @@
     "**/*.min.js"
   ],
   "devDependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
-    "@typescript-eslint/eslint-plugin": "^2.24.0",
-    "@typescript-eslint/parser": "^2.24.0",
-=======
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
->>>>>>> parent of 508eeab... updated dependencies
-=======
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
->>>>>>> parent of 508eeab... updated dependencies
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.8.2",
     "jest": "^25.1.0",
     "parcel-bundler": "^1.12.4",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "sass": "^1.26.3",
-    "stylelint": "^13.2.1",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.16.0",
-    "typescript": "^3.8.3"
-=======
-=======
->>>>>>> parent of 508eeab... updated dependencies
     "sass": "^1.24.0",
     "stylelint": "^12.0.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^3.1.1",
     "stylelint-scss": "^3.13.0",
     "typescript": "^3.7.4"
-<<<<<<< HEAD
->>>>>>> parent of 508eeab... updated dependencies
-=======
->>>>>>> parent of 508eeab... updated dependencies
   }
 }
