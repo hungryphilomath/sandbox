@@ -1,3 +1,4 @@
+// import 'regenerator-runtime/runtime'
 import { projectName } from './common/constants.js';
 
 document.addEventListener('DOMContentLoaded', () => {

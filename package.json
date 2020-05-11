@@ -30,7 +30,7 @@
   },
   "browserslist": [
     "last 2 versions",
-    "not IE > 9"
+    "not IE <= 11"
   ],
   "eslintIgnore": [
     "**/*.min.js"
