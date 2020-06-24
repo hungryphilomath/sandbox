@@ -2,7 +2,7 @@ module.exports = {
   'env': {
     'browser': true,
     'es6': true,
-    'jest': true
+    'jest': true,
     'node': true
   },
   'extends': [
@@ -35,10 +35,6 @@ module.exports = {
       {
         'max':  3
       }
-    ],
-    'object-curly-spacing': [
-      'error',
-      'always',
     ],
     'prefer-const': [
       'error',
