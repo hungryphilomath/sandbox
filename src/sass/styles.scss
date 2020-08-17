@@ -12,3 +12,95 @@
 
 /* UTILS */
 @import 'common/utils';
+
+// ace-carousel {
+//   border: 3px solid black;
+//   margin: 50px 100px;
+//   width: 500px;
+// }
+
+// [ace-carousel-page] {
+//   height: 500px;
+
+//   &:nth-of-type(1) {
+//     background-color: salmon;
+//   }
+
+//   &:nth-of-type(2) {
+//     background-color: green;
+//   }
+
+//   &:nth-of-type(3) {
+//     background-color: dodgerblue;
+//   }
+// }
+
+
+
+// // ----
+// $page-no: 1;
+
+// ace-carousel {
+//   display: block;
+// }
+
+
+// [ace-carousel-pages] {
+//   display: flex;
+//   // transform: translateX(calc(-100% * #{$page-no - 1}));
+// }
+
+
+// [ace-carousel-page] {
+//   flex: 1 0 100%;
+// }
+
+
+body {
+  padding: 50px
+}
+
+ace-carousel {
+  width: 300px;
+}
+
+[ace-carousel-slide] {
+  height: 300px;
+
+  &:nth-of-type(2) {
+    background-color: salmon;
+  }
+
+  &:nth-of-type(3) {
+    background-color: green;
+  }
+
+  &:nth-of-type(4) {
+    background-color: dodgerblue;
+  }
+}
+
+// -----------
+
+ace-carousel {
+  display: block;
+}
+
+[ace-carousel-slides] {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+[ace-carousel-slide] {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+
+// STYLED EXAMPLE
+// SHOWS SCROLL SNAPPING BEHAVIOUR
+[ace-carousel-scrollable] [ace-carousel-slides]{
+  overflow-x: auto;
+}
