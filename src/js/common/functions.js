@@ -1,4 +1,4 @@
-async function fetchFn(url, options = {}, log = false) {
+async function fetchFn(url:string, options = {}, log = false):unknown {
   let data = null;
   const response = await fetch(url, options);
 
