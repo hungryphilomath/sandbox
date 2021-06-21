@@ -24,8 +24,11 @@ module.exports = {
   'plugins': [
     'react',
     '@typescript-eslint',
+    'no-autofix'
   ],
   'rules': {
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    "@typescript-eslint/no-explicit-any": "warn",
     'arrow-spacing': [
       'error',
       {
@@ -33,16 +36,28 @@ module.exports = {
         'after': true,
       }
     ],
+    'indent': [
+      'error',
+      'tab',
+      {
+        'SwitchCase': 1
+      }
+    ],
+    "no-autofix/prefer-const": "error",
     'no-multiple-empty-lines': [
       'warn',
       {
         'max':  3,
       }
     ],
+    "no-unused-vars": [
+			"warn"
+		],
     'object-curly-spacing': [
       'error',
       'always',
     ],
+    // "prefer-const": "off",
     'prefer-const': [
       'error',
       {
@@ -54,7 +69,11 @@ module.exports = {
       'error',
       'always',
     ],
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    "sort-imports": "error",
+		"sort-keys": [
+			"error",
+			"asc"
+		]
   },
   'overrides': [
     {
@@ -65,6 +84,19 @@ module.exports = {
       'rules': {
         '@typescript-eslint/explicit-function-return-type': ['error'],
       }
-    }
+    },
+    {
+			"files": ["*.d.ts"],
+			"rules": {
+				"no-unused-vars": 0
+			}
+		},
+    {
+			"files": ["*[!.test].js"],
+			"rules": {
+				"indent": 0,
+				"@typescript-eslint/explicit-module-boundary-types": 0
+			}
+		}
   ]
 };
