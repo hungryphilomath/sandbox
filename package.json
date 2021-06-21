@@ -24,14 +24,14 @@
     "**/*.min.js"
   ],
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
-    "eslint": "^6.8.0",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.29.0",
     "eslint-plugin-no-autofix": "^1.1.2",
-    "stylelint": "^13.6.1",
-    "stylelint-config-standard": "^19.0.0",
-    "stylelint-order": "^3.1.1",
-    "stylelint-scss": "^3.13.0",
-    "typescript": "^3.7.4"
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
+    "typescript": "^4.3.4"
   }
 }
