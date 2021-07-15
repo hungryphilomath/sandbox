@@ -6,7 +6,6 @@ module.exports = {
 	},
 	'extends': [
 		'eslint:recommended',
-		'plugin:react/recommended',
 		'plugin:@typescript-eslint/eslint-recommended',
 	],
 	'globals': {
@@ -46,7 +45,6 @@ module.exports = {
 		'sourceType': 'module',
 	},
 	'plugins': [
-		'react',
 		'@typescript-eslint',
 		'no-autofix'
 	],
@@ -88,7 +86,6 @@ module.exports = {
 				'destructuring': 'all',
 			}
 		],
-		'react/prop-types': 0,
 		'semi': [
 			'error',
 			'always',
