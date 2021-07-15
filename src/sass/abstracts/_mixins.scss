@@ -1,3 +1,6 @@
+@use './constants' as *;
+
+
 // MEDIA QUERIES
 @mixin mq($from: null, $until: null, $only: null) {
 	// A mixin for applying responsive properties, takes in device names (tablet, desktop, wide)
@@ -59,6 +62,7 @@
 	}
 }
 
+
 // RESPONSIVE PROPERTIES
 @mixin resp-prop($property, $mob: null, $tab: null, $desk: null, $wide: null) {
 	// Create responsive property values by specifying the property name, the mobile, tablet, desktop and wide values.
@@ -100,4 +104,12 @@
 			#{$prop}-#{$position}: map-get($spacings, 'desktop') !important;
 		}
 	}
+}
+
+
+// TRUNCATE TEXT
+@mixin truncate-text() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }

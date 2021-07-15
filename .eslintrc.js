@@ -13,6 +13,30 @@ module.exports = {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly',
 	},
+	'overrides': [
+		{
+			'files': [
+				'*.ts',
+				'*.tsx',
+			],
+			'rules': {
+				'@typescript-eslint/explicit-function-return-type': ['error'],
+			}
+		},
+		{
+			"files": ["*.d.ts"],
+			"rules": {
+				"no-unused-vars": 0,
+			}
+		},
+		{
+			"files": ["*[!.test].js"],
+			"rules": {
+				"@typescript-eslint/explicit-module-boundary-types": 0,
+				"indent": 0,
+			}
+		}
+	],
 	'parser': '@typescript-eslint/parser',
 	'parserOptions': {
 		'ecmaFeatures': {
@@ -32,15 +56,15 @@ module.exports = {
 		'arrow-spacing': [
 			'error',
 			{
-				'before': true,
 				'after': true,
+				'before': true,
 			}
 		],
 		'indent': [
 			'error',
 			'tab',
 			{
-				'SwitchCase': 1
+				'SwitchCase': 1,
 			}
 		],
 		"no-autofix/prefer-const": "error",
@@ -69,34 +93,10 @@ module.exports = {
 			'error',
 			'always',
 		],
-		"sort-imports": "error",
+		"sort-imports": 0,
 		"sort-keys": [
 			"error",
 			"asc"
 		]
-	},
-	'overrides': [
-		{
-			'files': [
-				'*.ts',
-				'*.tsx',
-			],
-			'rules': {
-				'@typescript-eslint/explicit-function-return-type': ['error'],
-			}
-		},
-		{
-			"files": ["*.d.ts"],
-			"rules": {
-				"no-unused-vars": 0
-			}
-		},
-		{
-			"files": ["*[!.test].js"],
-			"rules": {
-				"indent": 0,
-				"@typescript-eslint/explicit-module-boundary-types": 0
-			}
-		}
-	]
+	}
 };

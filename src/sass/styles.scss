@@ -1,14 +1,13 @@
 /* SASS */
-@import 'common/variables';
-@import 'common/mixins';
-@import 'common/base';
+@forward './base';
 
 
 /* COMPONENTS */
-@import '../js/components/all';
+@forward '../js/components/all';
+
 
 /* PAGES */
 
 
 /* UTILS */
-@import 'common/utils';
+@forward './utils';
