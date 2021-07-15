@@ -1,7 +1,5 @@
 /* SASS */
-@import 'common/variables';
-@import 'common/mixins';
-@import 'common/base';
+@forward './base';
 
 
 /* COMPONENTS */
@@ -11,4 +9,4 @@
 
 
 /* UTILS */
-@import 'common/utils';
+@forward './utils';

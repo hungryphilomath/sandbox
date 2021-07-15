@@ -24,21 +24,22 @@
 		"**/*.min.js"
 	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^4.27.0",
-		"@typescript-eslint/parser": "^4.27.0",
-		"browser-sync": "^2.26.14",
-		"eslint": "^7.29.0",
+		"@typescript-eslint/eslint-plugin": "^4.28.3",
+		"@typescript-eslint/parser": "^4.28.3",
+		"browser-sync": "^2.27.4",
+		"eslint": "^7.30.0",
 		"eslint-plugin-no-autofix": "^1.1.2",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-clean-css": "^4.3.0",
-		"gulp-sass": "^4.1.0",
+		"gulp-sass": "^5.0.0",
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-terser": "^2.0.1",
+		"sass": "^1.35.2",
 		"stylelint": "^13.13.1",
 		"stylelint-config-standard": "^22.0.0",
 		"stylelint-order": "^4.1.0",
 		"stylelint-scss": "^3.19.0",
-		"typescript": "^4.3.4"
+		"typescript": "^4.3.5"
 	}
 }
