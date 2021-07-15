@@ -1,3 +1,5 @@
+@use './mixins' as *;
+
 // NO SPACING
 .u-no-margin {
 	margin: 0;
@@ -37,4 +39,10 @@
 			}
 		}
 	}
+}
+
+
+// TRUNCATE TEXT
+.u-truncate-text {
+	@include truncate-text();
 }
