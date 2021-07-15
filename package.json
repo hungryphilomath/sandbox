@@ -37,19 +37,19 @@
 	],
 	"devDependencies": {
 		"@babel/core": "^7.14.6",
-		"@babel/preset-env": "^7.14.5",
-		"@typescript-eslint/eslint-plugin": "^4.27.0",
-		"@typescript-eslint/parser": "^4.27.0",
-		"eslint": "^7.29.0",
+		"@babel/preset-env": "^7.14.7",
+		"@typescript-eslint/eslint-plugin": "^4.28.3",
+		"@typescript-eslint/parser": "^4.28.3",
+		"eslint": "^7.30.0",
 		"eslint-plugin-jest": "^24.3.6",
 		"eslint-plugin-no-autofix": "^1.1.2",
-		"jest": "^27.0.4",
+		"jest": "^27.0.6",
 		"parcel-bundler": "^1.12.5",
-		"sass": "^1.30.0",
+		"sass": "^1.35.2",
 		"stylelint": "^13.13.1",
 		"stylelint-config-standard": "^22.0.0",
 		"stylelint-order": "^4.1.0",
 		"stylelint-scss": "^3.19.0",
-		"typescript": "^4.3.4"
+		"typescript": "^4.3.5"
 	}
 }
