@@ -1,4 +1,4 @@
-async function fetchFn(url:string, options = {}, log = false):Promise<null|Object> {
+async function fetchFn(url:string, options = {}, log = false) {
 	let data = null;
 	const response = await fetch(url, options);
 
